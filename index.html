@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title> Chaos and Complexity </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/i-ching.js"></script>
 </head>
 
-<body>
+<body onload="load()">
     <div id="margins">
         <h1> I Ching Hexgram Generator </h1>
         <button onclick="genHex()" class="center"> Generate I Ching Hexgram </button>
         <div id="hex"> 
             <img src="images/sixty-four-hexagrams.png" id="hexgram"></img>
         </div>
+        <div id="button">
+            <button onclick="play()" class="center"> Play Song </button>
+        </div>
+        <div id="error"> </div>
     </div>
-
-    <script src="i-ching.js"></script>
 </body>
 </html>
