@@ -17,6 +17,12 @@ h1 {
     margin-right: 5vw;
 }
 
+#hex {
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 5vw;
+}
+
 button {
     margin:0 auto;
     display:block;
