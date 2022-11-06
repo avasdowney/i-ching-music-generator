@@ -1,3 +1,5 @@
+// import * as Tone from 'tone';
+
 function genHex() {
     hex = "";
     for (let i=0; i<6; i++) {
@@ -6,14 +8,8 @@ function genHex() {
 
     simplifyHex(hex);
     document.getElementById("hex").innerHTML = hexList;
-    button.style.visibility = 'visible';
-}
-
-function play() {
-    if (hexList.length > 1) {
-        document.getElementById("hex").innerHTML = "";
-        document.getElementById("error").innerHTML = "Playing music based on hexgrams.";
-    }
+    document.getElementById('play').style.visibility = 'visible';
+    document.getElementById('error').style.visibility = 'hidden';
 }
 
 function flipCoin() {
@@ -37,6 +33,8 @@ function getLine() {
             return "c"; // -- x --
     }
 }
+
+var hexList = [];
 
 function simplifyHex(hex) {
     switch(hex) {
@@ -235,8 +233,145 @@ function simplifyHex(hex) {
     }
 }
 
-var hexList = [];
+function music() {
+    switch(hex) {
+        case "䷁":
+            break;
+        case "䷗":
+            break;
+        case "䷆":
+            break;
+        case "䷒":
+            break;
+        case "䷎":
+            break;
+        case "䷣":
+            break;
+        case "䷭":
+            break;
+        case "䷊":
+            break;
+        case "䷏":
+            break;
+        case "䷲":
+            break;
+        case "䷧":
+            break;
+        case "䷵":
+            break;
+        case "䷽":
+            break;
+        case "䷶":
+            break;
+        case "䷟":
+            break;
+        case "䷡":
+            break;
+        case "䷇":
+            break;
+        case "䷂":
+            break;
+        case "䷜":
+            break;
+        case "䷻":
+            break;
+        case "䷦":
+            break;
+        case "䷾":
+            break;
+        case "䷯":
+            break;
+        case "䷄":
+            break;
+        case "䷬":
+            break;
+        case "䷐":
+            break;
+        case "䷮":
+            break;
+        case "䷹":
+            break;
+        case "䷞":
+            break;
+        case "䷰":
+            break;
+        case "䷛":
+            break;
+        case "䷪":
+            break;
+        case "䷖":
+            break;
+        case "䷚":
+            break;
+        case "䷃":
+            break;
+        case "䷨":
+            break;
+        case "䷳":
+            break;
+        case "䷕":
+            break;
+        case "䷑":
+            break;
+        case "䷙":
+            break;
+        case "䷢":
+            break;
+        case "䷔":
+            break;
+        case "䷿":
+            break;
+        case "䷥":
+            break;
+        case "䷷":
+            break;
+        case "䷝":
+            break;
+        case "䷱":
+            break;
+        case "䷍":
+            break; 
+        case "䷓":
+            break;
+        case "䷩":
+            break;
+        case "䷺":
+            break;
+        case "䷼":
+            break;
+        case "䷴":
+            break;
+        case "䷤":
+            break;
+        case "䷸":
+            break;
+        case "䷈":
+            break;
+        case "䷋":
+            break;
+        case "䷘":
+            break;
+        case "䷅":
+            break;
+        case "䷉":
+            break;
+        case "䷠":
+            break;
+        case "䷌":
+            break;
+        case "䷫":
+            break;
+        case "䷀":
+            break;
+    }
+}
 
-function getHex() {
-    return hexList;
+function play() {
+    if (hexList.length > 1) {
+        document.getElementById("hex").innerHTML = "";
+        document.getElementById('error').style.visibility = 'visible';
+        document.getElementById('play').style.visibility = 'hidden';
+        document.getElementById("error").innerHTML = "Playing music based on hexgrams.";
+        music();
+    }
 }

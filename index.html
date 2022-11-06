@@ -8,7 +8,7 @@
     <script src="js/i-ching.js"></script>
 </head>
 
-<body onload="load()">
+<body>
     <div id="margins">
         <h1> I Ching Hexgram Generator </h1>
         <button onclick="genHex()" class="center"> Generate I Ching Hexgram </button>
@@ -16,7 +16,7 @@
             <img src="images/sixty-four-hexagrams.png" id="hexgram"></img>
         </div>
         <div id="button">
-            <button onclick="play()" class="center"> Play Song </button>
+            <button onclick="play()" class="center" id="play"> Play Song </button>
         </div>
         <div id="error"> </div>
     </div>
