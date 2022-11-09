@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title> Chaos and Complexity </title>
     <link rel="stylesheet" href="css/style.css">
-
     <script src="js/i-ching.js"></script>
+    <script src="js/music.js"></script>
+    <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
 </head>
 
 <body>
     <div id="margins">
         <h1> I Ching Hexgram Generator </h1>
-        <button onclick="genHex()" class="center"> Generate I Ching Hexgram </button>
+        <button onclick=sound() class="center"> Sound </button>
+        <button onclick=genHex() class="center"> Generate I Ching Hexgram </button>
         <div id="hex"> 
             <img src="images/sixty-four-hexagrams.png" id="hexgram"></img>
         </div>
         <div id="button">
-            <button onclick="play()" class="center" id="play"> Play Song </button>
+            <button onclick=play() class="center" id="play"> Play Song </button>
         </div>
         <div id="error"> </div>
     </div>
