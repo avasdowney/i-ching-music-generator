@@ -16,25 +16,37 @@ function setup () {
     });
 
     drum = new Tone.MembraneSynth({
+      oscillator : {
+        type: 'triangle'
+      }
+    });
+
+    noise = new Tone.NoiseSynth({
         oscillator : {
           type: 'triangle'
         }
       });
+
+    test = new Tone.FMSynth({
+      oscillator : {
+        type: 'triangle'
+      }
+    });
     
     var feedbackDelay = new Tone.FeedbackDelay();
     synth.connect(feedbackDelay);
     synth.connect(Tone.Master);
     drum.connect(feedbackDelay);
     drum.connect(Tone.Master);
+    noise.connect(feedbackDelay);
+    noise.connect(Tone.Master);
+    test.connect(feedbackDelay);
+    test.connect(Tone.Master);
     feedbackDelay.connect(Tone.Master);
 }
 
 function play() {
     if (hexList.length > 1) {
-        document.getElementById("hex").innerHTML = "";
-        document.getElementById('error').style.visibility = 'visible';
-        document.getElementById('play').style.visibility = 'hidden';
-        document.getElementById("error").innerHTML = "Playing music based on hexgrams.";
         for (let i=0; i<hexList.length; i++) {
             music(hexList[i]);
             sleep(600);
@@ -43,7 +55,7 @@ function play() {
 }
 
 function sound() {
-    drum.triggerAttackRelease("C4", "8n"); 
+    test.triggerAttackRelease("C4", 0.05); 
 }
 
 function music(hex) {

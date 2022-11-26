@@ -6,8 +6,6 @@ function genHex() {
 
     simplifyHex(hex);
     document.getElementById("hex").innerHTML = hexList;
-    document.getElementById('play').style.visibility = 'visible';
-    document.getElementById('error').style.visibility = 'hidden';
 }
 
 function flipCoin() {
