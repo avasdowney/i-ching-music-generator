@@ -58,6 +58,10 @@ function sound() {
     test.triggerAttackRelease("C4", 0.05); 
 }
 
+function reset() {
+    window.location.reload();
+}
+
 function music(hex) {
     switch(hex) {
         case "䷁":
