@@ -6,7 +6,8 @@ The I-Ching is a classic Chinese divination text used to predict the future. Tra
 
 The method used to randomly generate the hexgrams for this project is similar to the coin method, as a random number generator with 2 possible values is able to signify the flip of a coin. These results are then translated into the hexgrams seen.
 
-<video src='https://www.youtube.com/watch?v=B_8-B2rNw7s' width=180></video>
+[<img src="https://www.lafolia.com/storage/2006/04/cage_musicofchanges-e1400548276833.jpg" width="50%" align="center">](https://www.youtube.com/watch?v=B_8-B2rNw7s "Music of Changes Link")
+<p style="text-align: center"> Click Me! </p>
 
 John Cage was an extremely influential musician of the twentieth century. One of his most notable works includes Music of Changes, which used the I Ching to randomly generate music. Each of the hexgrams were mapped to a different sound or instrument to create a truly random song. This project is able to employ this by using Tone.js to play a sound based on the hexgram generated.
 
